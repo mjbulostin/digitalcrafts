@@ -24,3 +24,4 @@ variableName = True
 print("Hello World!")
 print("My name is Michael, and this is my first program!")
 print(classSize)
+print("Hi")
