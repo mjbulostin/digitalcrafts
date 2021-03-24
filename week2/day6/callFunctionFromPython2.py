@@ -83,3 +83,19 @@ dictionairy_1 = {
     }
 }
 print(dictionairy_1["CS"])
+# loop over the list inside of dictionairy_1, print out
+# the list from the key "CS" and print everything inside
+# that list
+
+for literallyAnythingThatYouWant in dictionairy_1["CS"]:
+    print(literallyAnythingThatYouWant)
+
+
+# functions
+# variables
+# list
+# dictionaries
+# while loops
+# for loops
+# accessing information inside of a dictionairy or list
+# CLASSES

@@ -34,9 +34,9 @@ class TempUser:
         self.name = name
 
 class PermUser:
-    def __init__(self, name, age):
+    def __init__(self, name, email):
         self.name = name
-        self.age = age
+        self.email = email
 
 # joe = TempUser("Joe")
 
@@ -56,6 +56,24 @@ def typeOfUser():
     else:
         print("Please try again.")
     return newUser
+
+mike = typeOfUser()
+
+def typeOfUser():
+        newUser = ""
+        typeOfUser = input("Would you like to be a (t)Temporary User, or a (p)Permanent           User?"
+        if typeOfUser == "p":
+          userName = input("What is your name?")
+          userEmail = input("What is your email?")
+          newUser = PermUser(userName, userEmail)
+          print(f"{newUser.name} 's email is {newUser.email} and is a Permanent user.")
+        elif typeOfUser == "t":
+          userName = input("What is your name?")
+          newUser = TempUser(userName)
+          print(f"{newUser.name} is a Temporary User.")
+        else:
+          print("Please try again.")
+        return newUser
 
 mike = typeOfUser()
 
