@@ -1,0 +1,17 @@
+.basic-flex {
+    display: flex;
+}
+.basic-flex-direction {
+    display: flex;
+    flex-direction: column;
+}
+.basic-flex-wrap {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.basic-flex-justify-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around
+}
