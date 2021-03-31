@@ -63,6 +63,17 @@ const dantesHashOfInferno = {
     },
   };
 
-  console.log(dantesHashOfInferno.level1.contents[15]);
-  console.log(dantesHashOfInferno.level3.contents[0].tower);
-//   console.log(dantesHashOfInferno.level5.contents);
+
+  // You wil do the following:
+// Access the contents of level1, print value 234
+// Access the contents of level3, print out the first index of tower
+// Access the contents of level5, print out "you need to calm down" by accessing it's key
+// Access the final layer of the inferno, and print out the secret, specifically the value of theSecretIs
+
+// {} = . notation
+// [] = [0/1/2/3/4/etc...]
+
+console.log(dantesHashOfInferno.level1.contents[15]);
+console.log(dantesHashOfInferno.level3.contents[0].tower);
+console.log(dantesHashOfInferno.level5.contents[0].reeeeeee[1].anger);
+console.log(dantesHashOfInferno.level9.contents[0].tower[0].reeeeeee[1].secret[0].theSecretIs);

@@ -68,6 +68,7 @@ if (playerHeight < 4) {
 // print out the message of whatever operation t hey did
 // and the correct answer
 
+
 calculate("multiply", 23, 84);
     console.log(" You did multiple and your answer is ${answerHere}")
 calculate("subtract", 102, 84);
