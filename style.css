@@ -1,0 +1,55 @@
+*{
+    margin: 0;
+    padding: 0;
+    boxing-size: border-box;
+    font-family: "Roboto", sans-serif;
+    }
+
+body {
+    
+}
+
+  p, li, h1 {
+    color: rgb(255, 255, 255);
+  }
+
+
+  html {
+    font-size: 8px; /* px means "pixels": the base font size is now 10 pixels high  */
+    font-family: "Roboto", sans-serif; /* this should be the rest of the output you got from Google fonts */
+  }
+  h1 {
+    font-size: 20px;
+    text-align: center;
+  }
+  
+  p, li {
+    font-size: 12px;
+    line-height: 2;
+    letter-spacing: 1px;
+  }
+
+  html {
+    background-color: #0061e09c;
+    background: url(https://camo.githubusercontent.com/8bb37a4e6370c9360e9d28c0ee2a741737f9ade649380473446dea380b65ee01/687474703a2f2f692e696d6775722e636f6d2f545269454863332e706e67) center center/cover;
+  height: 100vh;
+  }
+
+  body {
+    width: 600px;
+    margin: 0 auto;
+    background-color: hsla(0, 0%, 39%, 0.568);
+    padding: 0 16px 16px 16px;
+    border: 12px solid rgb(255, 255, 255);
+  }
+
+  h1 {
+    margin: 0;
+    padding: 16px 0;
+    color: #ffffff;
+    text-shadow: 1px 1px 1px rgb(255, 255, 255);
+  }
+  img {
+    display: block;
+    margin: 0 auto;
+  }

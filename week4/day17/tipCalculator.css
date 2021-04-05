@@ -35,31 +35,7 @@ p {
     border-top: 2px solid white;
 }
 
-
-
 #button a:hover {
    color: skyblue;
    opacity: 0.7;
 }
-
-.social_icons a:selection {
-    
-}
-
-/* #background {
-    position: fixed; 
-    top: -50%; 
-    left: -50%; 
-    width: 200%; 
-    height: 200%;
-  }
-  
-  #background img {
-    position: absolute; 
-    top: 0; 
-    left: 0; 
-    right: 0; 
-    bottom: 0; 
-    margin: auto; 
-    min-width: 50%;
-    min-height: 50%; */
