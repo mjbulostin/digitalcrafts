@@ -32,5 +32,4 @@ $.ajax({
     console.log(valueReturned);
 });
 
-7706166774
 
