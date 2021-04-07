@@ -1,6 +1,6 @@
 const mainContainer = document.querySelector(".main-container");
-const buttonPersons = document.querySelector("#getPersons");
-const personsData = document.querySelector(".personsData")
+// const buttonPersons = document.querySelector("#getPersons");
+// const personsData = document.querySelector(".personsData")
 
 const fetchPersonsData = async () => {
   let response = await fetch("https://fakerapi.it/api/v1/persons?_quantity=30&_locale=en_US");
@@ -11,7 +11,7 @@ const fetchPersonsData = async () => {
     console.log(persons);
     const personsContainer = document.createElement("div");
     personsContainer.className = "persons";
-    firstNameOfPersons.innerHTML = persons.firstname;
+    firstNameOfPersons.innerHTML = firstNameOfPersons.firstname;
     const firstNameOfPersons = document.createElement("h3");
     const img = document.createElement("img");
     img.height = "200";
