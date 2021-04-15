@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    <title>Document</title>
+    <style>
+        .parent {
+            height: 300px;
+            width: 300px;
+            background-color: skyblue;
+            
+        }
+        .child {
+            height: 50%;
+            width: 50%;
+            background-color: rgb(4, 120, 165);
+            /* transition: transform 1.5s ubic-bezier(1, 0.36, 0, 0.65); */
+            animation: top-btm-right 3s ease-in forwardss infinite atlernate;
+            border-radius: 300px;
+            animation-play-state: paused;
+            
+        }
+        .parent:hover .child {
+            /* transform: translateX(100%) translateY(100%); */
+            background-color: rgb(0, 171, 145);
+            animation: top-btm-right 1s ease-in;
+            animation-play-state: running;
+        }
+        @keyframes top-btm-right {
+            0% {
+                transform: translateX(100%);
+            }
+            35% {
+                transform: translateY(100%);
+            }
+            66% {
+                transform: translateY(100%);
+            }
+            100% {
+                transform: translateY(100%);
+            }
+
+        }
+        /* h1:hover {
+            text-decoration: underline overline #FF3028;;
+        } */
+    </style>
+</head>
+<body>
+    <h1>Animations</h1>
+    <div class="parent">
+        <div class="child">
+    </div>
+</body>
+</html>
