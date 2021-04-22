@@ -2,7 +2,7 @@ const express = require("express");
 const app = express();
 const { readFile } = require("fs");
 
-const PORT = 3002;
+const PORT = 3003;
 
 app.use(express.json())
 
@@ -21,15 +21,15 @@ app.get("/contact", (req, res) => {
     res.send(message);
 });
 
-// app.post("/messages/:id", (req, res) => {
-//     console.log(req)
+app.post("/messages/:id", (req, res) => {
+    console.log(req)
 
-//     const copy = [...array[id]]
-//     const updateCopy = [...array[id], ...req.body]
-//       const {logo, name} = req.body 
-//       const message = `Your logo is ${logo} and it is called ${name}`;
-//       res.send(message);
-//     });
+    const copy = [...array[id]]
+    const updateCopy = [...array[id], ...req.body]
+      const {logo, name} = req.body 
+      const message = `Your logo is ${logo} and it is called ${name}`;
+      res.send(message);
+    });
 
 app.get("*", (req, res) => {
     const message = "Uh oh, this page is not real 🤭";

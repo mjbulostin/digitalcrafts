@@ -40,7 +40,7 @@ app.get("/", (req, res) => {
 app.get("/poop", (req, res) => {
 
     if(req.body === doge){
-        res.send("user /id is right here"hi 🐕");
+        res.send("user /id is right here 🐕");
     } else {
         res.send("hi 💩");
     }
