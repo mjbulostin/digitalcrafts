@@ -69,7 +69,7 @@ app.delete("/delete_todo/:id", async (req, res) => {
         const deleteToDoInDB = await pool.query("DELETE FROM todo WHERE todo_id = $1",
         [id]
     );
-    res.json("Todo was successsfully deleted!");
+    res.json("Todo was successfully deleted!");
 } catch (err) {
     console.log(err.messsage);
 }
