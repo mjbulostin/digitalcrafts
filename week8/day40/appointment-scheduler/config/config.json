@@ -2,7 +2,7 @@
   "development": {
     "username": "michaelbulostin",
     "password": null,
-    "database": "database_development",
+    "database": "dr_appointment_development",
     "host": "127.0.0.1",
     "dialect": "postgres"
   },
