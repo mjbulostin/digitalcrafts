@@ -7,7 +7,7 @@
 3.  `npm install express cors pg`, whatever you need
 4.  .gitignore
 5.  GET YOUR Tools, aka const require stuff(express, pg, etc)
-6.  Add node_modules to gitignore
+6.  Add node_modules to gitignoreug(" the list of )
 7.  create an instance of express
     `e.g const app = express()`
 8.  Use middleware, like `app.use, app.use(express.json())`
