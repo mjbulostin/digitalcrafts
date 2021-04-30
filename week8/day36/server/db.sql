@@ -1,7 +1,7 @@
-CREATE DATABASE ToDoListApp;
+CREATE DATABASE SequelizeExample;
 
-CREATE TABLE todo(
-    todo_id SERIAL PRIMARY KEY,
+CREATE TABLE sequelize(
+    sequelize_id SERIAL PRIMARY KEY,
     description VARCHAR(255)
 
 );

@@ -1,6 +1,12 @@
 // const { User } = require('./models');
 const Sequelize = require('sequelize');
 const { User, Photo } = require('./models');
+const express = require("express");
+const app = express();
+const cors = require("cors");
+const port = 3008;
+const pool = require("./db.js");
+
 
 app.post('/users', async (req, res) => {
     // req.body contains an Object with firstName, lastName, email
