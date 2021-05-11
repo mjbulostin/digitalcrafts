@@ -14,7 +14,7 @@ app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 app.use(cors());
 app.engine("html", es6Renderer);
-app.set("appointment", "../appointment");
+app.set("appointments", "../appointments");
 app.set("appointment schedule", "html");
 
 // routes

@@ -1,0 +1,8 @@
+.rain {
+  height: 100px;
+  background-color: royalblue;
+}
+.no-rain {
+  height: 100px;
+  background-color: red;
+}
