@@ -14,7 +14,9 @@
   width: 100%;
 }
 
-.shipping-input-text-street {
+.shipping-input-text-apt,
+.shipping-input-text-street,
+.shipping-input-button {
   grid-columnn: 1/3;
 }
 
