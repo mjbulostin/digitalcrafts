@@ -1,0 +1,25 @@
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}
+
+.shipping-form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.shipping-form input {
+  margin: 0.4rem;
+  padding: 0.7rem;
+  width: 100%;
+}
+
+.shipping-input-text-street {
+  grid-columnn: 1/3;
+}
+
+.shipping-form-container {
+  background-color: 39918c;
+  justify-content: center;
+  display: flex;
+}
