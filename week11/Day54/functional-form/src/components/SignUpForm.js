@@ -1,28 +1,64 @@
-import React, { useState } from "react";
+import React from "react";
 import {
-  SignUpButton,
-  SignUpFormInput,
+  SignUpFormInputName,
+  SignUpFormInputLName,
   SignUpFormDiv,
+  SignUpFormContainer,
+  SignUpHeader,
+  SignUpFormInputLongField,
+  SignUpButton,
 } from "./styledComponents/SignUpFormStyles";
 
-const SignUpForm = (props) => {
+const SignUpForm = ({ formValues, setFormValues, setUserAndResetForm }) => {
   return (
-    <div className="sign-up-form-container">
-      <h1>Create Account</h1>
+    <SignUpFormContainer className="sign-up-form-container">
+      <SignUpHeader>Create Account</SignUpHeader>
       <SignUpFormDiv action="">
-        <SignUpFormInput
-          onChange={(e) => props.setFirstName(e.target.value)}
+        <SignUpFormInputName
+          onChange={(e) =>
+            setFormValues({ ...formValues, firstName: e.target.value })
+          }
           type="text"
-          value={props.firstName}
+          value={formValues.firstName}
           placeholder="First Name"
         />
-        <SignUpFormInput type="text" placeholder="Last Name" />
-        <SignUpFormInput type="email" placeholder="Email" />
-        <SignUpFormInput type="password" placeholder="Password" />
-        <SignUpFormInput type="password" placeholder="Re-Type Password" />
-        <SignUpButton>Sign Up</SignUpButton>
+        <SignUpFormInputLName
+          type="text"
+          placeholder="Last Name"
+          onChange={(e) =>
+            setFormValues({ ...formValues, lastName: e.target.value })
+          }
+          value={formValues.lastName}
+        />
+        <SignUpFormInputLongField
+          type="email"
+          placeholder="Email"
+          onChange={(e) =>
+            setFormValues({ ...formValues, email: e.target.value })
+          }
+          value={formValues.email}
+        />
+        <SignUpFormInputLongField
+          type="password"
+          placeholder="Password"
+          onChange={(e) =>
+            setFormValues({ ...formValues, password: e.target.value })
+          }
+          value={formValues.password}
+        />
+        <SignUpFormInputLongField
+          type="password"
+          placeholder="Re-Type Password"
+          onChange={(e) =>
+            setFormValues({ ...formValues, retypedPassword: e.target.value })
+          }
+          value={formValues.retypedPassword}
+        />
       </SignUpFormDiv>
-    </div>
+      <SignUpButton onClick={() => setUserAndResetForm(formValues)}>
+        Sign Up
+      </SignUpButton>
+    </SignUpFormContainer>
   );
 };
 export default SignUpForm;
