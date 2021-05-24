@@ -1,9 +1,9 @@
 import React from 'react'
 
-export default function Jokes() {
+export default function Jokes(props) {
     return (
         <div>
-            <h1>Jokes</h1>
+            <li>{props.joke}</li>
         </div>
     )
 }
