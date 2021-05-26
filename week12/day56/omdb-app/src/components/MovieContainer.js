@@ -16,9 +16,9 @@ export default function MovieContainer() {
     }
     return (
         <div className="MovieContainer">
-            <h1>Movie Container</h1>
-            <input type="text" value={userInput} placeholder="Search for a Movie" onChange={(e) => setUserInput(e.target.value)}/>
-            <button onClick={() => getMovies()}>Search</button>
+            <h1>Movie Search</h1>
+            <input type="text" value={userInput} placeholder="Enter a movie title" onChange={(e) => setUserInput(e.target.value)}/>
+            <button onClick={() => getMovies()}>Submit</button>
             <div className="SecondContainer">
                 {movies.map(movie=> <Movie title={movie.Title} image={movie.Poster}/>)}
             </div>           
