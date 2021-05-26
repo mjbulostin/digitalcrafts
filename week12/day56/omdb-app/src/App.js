@@ -1,10 +1,11 @@
-import SearchContainer from "./components/SearchContainer"
-import "./styles/App.scss";
+import './App.css';
+import MovieContainer from './components/MovieContainer';
+
 
 function App() {
   return (
     <div className="App">
-      <SearchContainer />
+      <MovieContainer />
     </div>
   );
 }
