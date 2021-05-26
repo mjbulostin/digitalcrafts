@@ -3,6 +3,7 @@ const initialState = {
     userName: "mike",
     address: {},
     dog: "🐕"
+    name: "",
 };
 
 
@@ -19,6 +20,9 @@ function rootReducer(state = initialState, action) {
 
         case "CHANGE_DUCK_TO_DOG":
             return { ...state, dog: "🐕"};
+        
+        // case "DISPLAY_NAME":
+        //     return { ...state, name.value}
 
         default:
             return state;
