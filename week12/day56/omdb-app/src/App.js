@@ -1,14 +1,10 @@
-import './App.css';
 import SearchContainer from "./components/SearchContainer"
-
-
+import "./styles/App.scss";
 
 function App() {
   return (
     <div className="App">
-      <h1>Welcome to OMDB!</h1>
       <SearchContainer />
-
     </div>
   );
 }
