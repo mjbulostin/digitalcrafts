@@ -18,9 +18,15 @@ export default function Counter(props) {
             <button onClick={() => dispatch({ type: "SUBTRACT" })}>Subtract</button>
             <button onClick={() => dispatch({ type: "CHANGE_DOG_TO_DUCK"})}>QUACK</button>
             <button onClick={() => dispatch({ type: "CHANGE_DUCK_TO_DOG"})}>BORK</button>
-            {/* <p>{props.counter}</p>
-            <button onClick={() => dispatch({ type: "ADD_COUNTER"})}>Add</button>
-            <button onClick={() => dispatch({ type: "SUBTRACT_COUNTER"})}>Subtract</button> */}
+
+            {/* <input
+            type="text"
+            onChange={(e) =>
+                dispatch({ type: "CHANGE_"})}
+
+            {/* <p>{props.counter}</p> */}
+            {/* <button onClick={() => dispatch({ type: "ADD_COUNTER"})}>Add</button>
+            <button onClick={() => dispatch({ type: "SUBTRACT_COUNTER"})}>Subtract</button> */} */}
         </div>
     )
 }

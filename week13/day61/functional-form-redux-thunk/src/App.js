@@ -1,4 +1,3 @@
-import "./App.css";
 import React, { useState } from "react";
 import { AppStyle } from "./components/styledComponents/AppStyles";
 import SignUpForm from "./components/SignUpForm";
